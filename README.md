@@ -1,5 +1,22 @@
 # Pemesanan-Tiket-Bioskop-dengan-Remote-Invocation-XMLRPC-
-Pemesanan Tiket Bioskop adalah sebuah program sederhana yang kami bangun menggunakan bahasa pemograman Python yang berguna untuk membantu proses transaksi pada pemesanan tiket bisoskop. Program ini dibangun menggunakan teknik Remote Invocation (XMLRPC) yang terdiri dari 2 sisi yaitu Server sebagai penjual dan Client sebagai pembeli.
+Pemesanan Tiket Bioskop adalah sebuah program sederhana yang kami bangun menggunakan bahasa pemograman Python yang berguna untuk membantu proses transaksi pada pemesanan tiket bisoskop. Program ini dibangun menggunakan teknik Remote Invocation (XMLRPC) yang terdiri dari 2 sisi yaitu Server sebagai penjual dan Client sebagai pembeli. Pada sisi Server yang berperan sebagai penjual, terdapat beberapa fungsi yang dapat dijalankan yaitu :
+
+1. Fungsi info_film() untuk menampilkan info film yang tersedia pada array Slot dan akan dikirimkan ke sisi client
+2. Fungsi info_pesanan() untuk melakukan pemesanan tiket dan menghitung total harga yang harus dibayar oleh pembeli
+3. Fungsi slot_tiket() untuk mengetahui sisa slot yang tersedia pada setiap filmnya
+4. Fungsi main() untuk membuat tampilan menu awal pada server dengan 4 option yaitu : menambahkan film, menghapus film, mengubah harga, dan tidak melakukan perubahan apapun, dengan penjelasan sebagai berikut :
+
+- Menambahkan film berguna untuk menambahkan slot film baru kedalam array Slot oleh penjual, dan info terbaru ini dapat dilihat oleh sisi Client
+- Menghapus film berguna untuk menghapus slot film lama di array slot oleh penjual, dan info terbaru ini dapat dilihat oleh sis Client.
+- Mengubah harga berguna untuk mengubah harga film dari harga default yaitu Rp35000 menjaid harga inputarn baru secara bebas oleh penjual.
+- Tidak melakukan perubahan apa-apa, sehingga program dijalankan sesuai dengan default data yang sudah diberikan sebelumnya.
+
+Pada sisi Client yang berperan sebagai pembeli, terdapat beberapa pemanggilan fungsi yang ada pada sisi Server, yaitu :
+
+1. Menampilkan jadwal film terbaru dan tersedia
+2. Memesan tiket bioskop dengan menginputkan pilihan film dan jumlah tiket yang akan dibeli.
+3. Melihat harga total tiket yang dibeli.
+4. Melihat tampilan tiket akhir yang telah dibeli.
 
 # Instalasi Aplikasi
 
